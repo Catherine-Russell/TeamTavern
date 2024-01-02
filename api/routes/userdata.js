@@ -5,6 +5,7 @@ const UserdataController = require("../controllers/userdata");
 
 router.get("/", UserdataController.Index);
 router.get("/:id", UserdataController.FindByID);
+router.post("/addfriend", UserdataController.addFriend);
 
 
 
