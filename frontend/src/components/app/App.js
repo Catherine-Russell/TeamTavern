@@ -14,6 +14,7 @@ import SinglePint from '../singlepint/singlepint';
 import WalletPage from '../../Pages/wallet';
 import PubGroupsPage from '../pubGroupsPage/PubGroupsPage'
 import SingleGroupPage from '../singleGroupPage/SingleGroupPage'
+import NewGroupPage from '../newGroupPage/NewGroupPage'
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='/pint/:PintID' element={<SinglePint navigate={ useNavigate() }/>}/>
           <Route path='/wallet' element={<WalletPage navigate={ useNavigate() }/>}/>
           <Route path='/groups/:pubGroupId' element={<SingleGroupPage navigate={ useNavigate() }/>}/>
+          <Route path='/groups/new' element={<NewGroupPage navigate={ useNavigate() }/>}/>
           <Route path='/groups' element={<PubGroupsPage navigate={ useNavigate() }/>}/>
 
           <Route path='/'  element={<Home navigate={ useNavigate() }/>}/>
